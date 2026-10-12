@@ -1,0 +1,103 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+{"logLevel":"debug","message":"gauge-java took 2133milliseconds to load and scan. This should be less than \u0027runner_connection_timeout\u0027 config value."}
+{"logLevel":"debug","message":"run \u0027gauge config runner_connection_timeout\u0027 and verify that it is \u003c 2133"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 58553"}
+{"logLevel":"info","message":"Listening on port:58553"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing \u0027com.hepsiburada.step.StepImplementation.enterPasswordFromConfig\u0027 and \u0027com.hepsiburada.step.StepImplementation.enterPasswordFromConfig\u0027"}
+{"logLevel":"debug","message":"Found enter password from config in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027com.hepsiburada.step.StepImplementation.verifyProductListVisible\u0027 and \u0027com.hepsiburada.step.StepImplementation.verifyProductListVisible\u0027"}
+{"logLevel":"debug","message":"Found verify product list is visible in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027com.hepsiburada.step.StepImplementation.enterPassword\u0027 and \u0027com.hepsiburada.step.StepImplementation.enterPassword\u0027"}
+{"logLevel":"debug","message":"Found enter password {} in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027com.hepsiburada.step.StepImplementation.verifyProductBasicDetailsInCart\u0027 and \u0027com.hepsiburada.step.StepImplementation.verifyProductBasicDetailsInCart\u0027"}
+{"logLevel":"debug","message":"Found verify product basic details in cart in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027com.hepsiburada.step.StepImplementation.openCartFromHeader\u0027 and \u0027com.hepsiburada.step.StepImplementation.openCartFromHeader\u0027"}
+{"logLevel":"debug","message":"Found open cart from header in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027com.hepsiburada.step.StepImplementation.addProductToCartFromDetailPage\u0027 and \u0027com.hepsiburada.step.StepImplementation.addProductToCartFromDetailPage\u0027"}
+{"logLevel":"debug","message":"Found add product to cart from detail page in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027com.hepsiburada.step.StepImplementation.verifyUserLoggedIn\u0027 and \u0027com.hepsiburada.step.StepImplementation.verifyUserLoggedIn\u0027"}
+{"logLevel":"debug","message":"Found verify user is logged in in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027com.hepsiburada.step.StepImplementation.verifyProductNameVisibleInCart\u0027 and \u0027com.hepsiburada.step.StepImplementation.verifyProductNameVisibleInCart\u0027"}
+{"logLevel":"debug","message":"Found verify product name is visible in cart in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027com.hepsiburada.step.StepImplementation.clickLogin\u0027 and \u0027com.hepsiburada.step.StepImplementation.clickLogin\u0027"}
+{"logLevel":"debug","message":"Found click login in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027com.hepsiburada.step.StepImplementation.openSecondRowFirstProduct\u0027 and \u0027com.hepsiburada.step.StepImplementation.openSecondRowFirstProduct\u0027"}
+{"logLevel":"debug","message":"Found open second row first product in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027com.hepsiburada.step.StepImplementation.searchForProduct\u0027 and \u0027com.hepsiburada.step.StepImplementation.searchForProduct\u0027"}
+{"logLevel":"debug","message":"Found search for {} in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027com.hepsiburada.step.StepImplementation.goToLoginPage\u0027 and \u0027com.hepsiburada.step.StepImplementation.goToLoginPage\u0027"}
+{"logLevel":"debug","message":"Found go to login page in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027com.hepsiburada.step.StepImplementation.verifyProductGridLayout\u0027 and \u0027com.hepsiburada.step.StepImplementation.verifyProductGridLayout\u0027"}
+{"logLevel":"debug","message":"Found verify product grid layout in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027com.hepsiburada.step.StepImplementation.enterUsername\u0027 and \u0027com.hepsiburada.step.StepImplementation.enterUsername\u0027"}
+{"logLevel":"debug","message":"Found enter username {} in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027com.hepsiburada.step.StepImplementation.enterUsernameFromConfig\u0027 and \u0027com.hepsiburada.step.StepImplementation.enterUsernameFromConfig\u0027"}
+{"logLevel":"debug","message":"Found enter username from config in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027com.hepsiburada.step.StepImplementation.openChrome\u0027 and \u0027com.hepsiburada.step.StepImplementation.openChrome\u0027"}
+{"logLevel":"debug","message":"Found open chrome in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027com.hepsiburada.step.StepImplementation.goToHepsiburada\u0027 and \u0027com.hepsiburada.step.StepImplementation.goToHepsiburada\u0027"}
+{"logLevel":"debug","message":"Found go to hepsiburada in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027com.hepsiburada.step.StepImplementation.hoverUserInfo\u0027 and \u0027com.hepsiburada.step.StepImplementation.hoverUserInfo\u0027"}
+{"logLevel":"debug","message":"Found hover user info in current project scope."}
+{"logLevel":"debug","message":"Comparing \u0027com.hepsiburada.step.StepImplementation.clickLoginSubmit\u0027 and \u0027com.hepsiburada.step.StepImplementation.clickLoginSubmit\u0027"}
+{"logLevel":"debug","message":"Found click login submit in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\topen chrome : public void openChrome()"}
+{"logLevel":"debug","message":"\tverify product list is visible : public void verifyProductListVisible()"}
+{"logLevel":"debug","message":"\tenter username from config : public void enterUsernameFromConfig()"}
+{"logLevel":"debug","message":"\tverify user is logged in : public void verifyUserLoggedIn()"}
+{"logLevel":"debug","message":"\tenter password {} : public void enterPassword(String password)"}
+{"logLevel":"debug","message":"\tgo to hepsiburada : public void goToHepsiburada()"}
+{"logLevel":"debug","message":"\tverify product basic details in cart : public void verifyProductBasicDetailsInCart()"}
+{"logLevel":"debug","message":"\thover user info : public void hoverUserInfo()"}
+{"logLevel":"debug","message":"\tenter username {} : public void enterUsername(String username)"}
+{"logLevel":"debug","message":"\tclick login submit : public void clickLoginSubmit()"}
+{"logLevel":"debug","message":"\tsearch for {} : public void searchForProduct(String keyword)"}
+{"logLevel":"debug","message":"\tverify product grid layout : public void verifyProductGridLayout()"}
+{"logLevel":"debug","message":"\tgo to login page : public void goToLoginPage()"}
+{"logLevel":"debug","message":"\tenter password from config : public void enterPasswordFromConfig()"}
+{"logLevel":"debug","message":"\tadd product to cart from detail page : public void addProductToCartFromDetailPage()"}
+{"logLevel":"debug","message":"\topen second row first product : public void openSecondRowFirstProduct()"}
+{"logLevel":"debug","message":"\topen cart from header : public void openCartFromHeader()"}
+{"logLevel":"debug","message":"\tclick login : public void clickLogin()"}
+{"logLevel":"debug","message":"\tverify product name is visible in cart : public void verifyProductNameVisibleInCart()"}
+{"logLevel":"debug","message":"Executing \u0027open chrome\u0027 using \u0027class com.hepsiburada.step.StepImplementation.openChrome"}
+Eki 09, 2026 2:25:35 ÖS org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Eki 09, 2026 2:25:35 ÖS org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 154.0.8037.98. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+{"logLevel":"debug","message":"Executing \u0027go to hepsiburada\u0027 using \u0027class com.hepsiburada.step.StepImplementation.goToHepsiburada"}
+{"logLevel":"debug","message":"Executing \u0027hover user info\u0027 using \u0027class com.hepsiburada.step.StepImplementation.hoverUserInfo"}
+{"logLevel":"debug","message":"Executing \u0027click login\u0027 using \u0027class com.hepsiburada.step.StepImplementation.clickLogin"}
+{"logLevel":"debug","message":"Executing \u0027enter username from config\u0027 using \u0027class com.hepsiburada.step.StepImplementation.enterUsernameFromConfig"}
+{"logLevel":"debug","message":"Executing \u0027enter password from config\u0027 using \u0027class com.hepsiburada.step.StepImplementation.enterPasswordFromConfig"}
+{"logLevel":"debug","message":"Executing \u0027click login submit\u0027 using \u0027class com.hepsiburada.step.StepImplementation.clickLoginSubmit"}
+{"logLevel":"debug","message":"Executing \u0027verify user is logged in\u0027 using \u0027class com.hepsiburada.step.StepImplementation.verifyUserLoggedIn"}
+Kullanýcý baþarýlý þekilde login olur
+{"logLevel":"debug","message":"Executing \u0027search for {}\u0027 using \u0027class com.hepsiburada.step.StepImplementation.searchForProduct"}
+Arama sonuçlarý kullanýcý girdisine uygun gelir
+{"logLevel":"debug","message":"Executing \u0027open second row first product\u0027 using \u0027class com.hepsiburada.step.StepImplementation.openSecondRowFirstProduct"}
+Ýkinci satýrdaki ilk ürünün sayfasýna yönlenir
+  Ürün: Lenovo Yoga Slim 7 Aura Edition Intel Core Ultra 5 226V 16GB 512GB SSD Windows 11 Home 14" Taþýnabilir Bilgisayar 83JX00BATR
+{"logLevel":"debug","message":"Executing \u0027add product to cart from detail page\u0027 using \u0027class com.hepsiburada.step.StepImplementation.addProductToCartFromDetailPage"}
+Ürün sepete eklenir
+{"logLevel":"debug","message":"Executing \u0027open cart from header\u0027 using \u0027class com.hepsiburada.step.StepImplementation.openCartFromHeader"}
+{"logLevel":"debug","message":"Executing \u0027verify product name is visible in cart\u0027 using \u0027class com.hepsiburada.step.StepImplementation.verifyProductNameVisibleInCart"}
+Sepet ekranýnda eklenen ürün görünür
+  Ürün: Lenovo Yoga Slim 7 Aura Edition Intel Core Ultra 5 226V 16GB 512GB SSD Windows 11 Home 14" Taþýnabilir Bilgisayar 83JX00BATR
+{"logLevel":"debug","message":"Executing \u0027verify product basic details in cart\u0027 using \u0027class com.hepsiburada.step.StepImplementation.verifyProductBasicDetailsInCart"}
+Ürün temel detaylarý sepetle eþleþir
+  Marka: lenovo
+  Ad (ilk kýsým): lenovo yoga slim
+  Arama kelimesi: bilgisayar
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+{"logLevel":"debug","message":"Runner killed gracefully."}

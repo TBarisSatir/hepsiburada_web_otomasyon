@@ -1,0 +1,8 @@
+[
+	"C:\\Users\\baris\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gauge.Gauge_Microsoft.Winget.Source_8wekyb3d8bbwe\\gauge.exe",
+	"run",
+	"--machine-readable",
+	"--hide-suggestion",
+	"--simple-console",
+	"C:/Users/baris/IdeaProjects/HepsiburadaAutomation/specs/hepsiburada.spec:3"
+]
