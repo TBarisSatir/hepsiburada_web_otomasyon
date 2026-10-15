@@ -49,34 +49,6 @@ public class SearchResultsPage extends BasePage {
         return (TARGET_ROW - 1) * PRODUCTS_PER_ROW;
     }
 
-    /** Ürün listesi görünür olmalı ve ikinci satıra yetecek kadar ürün içermeli. */
-    public void verifyProductListVisible() {
-
-        int required = PRODUCTS_PER_ROW * TARGET_ROW;
-
-        try {
-            waitFor(15).until(d -> {
-                List<WebElement> cards = findProductCards();
-                if (cards.size() < required) {
-                    return false;
-                }
-                try {
-                    return cards.get(0).isDisplayed();
-                } catch (StaleElementReferenceException e) {
-                    return false;
-                }
-            });
-        } catch (TimeoutException e) {
-            throw new AssertionError(
-                    "Ürün listesi görünür değil veya ikinci satıra yetecek kadar ürün yok. "
-                            + "Bulunan ürün sayısı: " + findProductCards().size()
-                            + " (en az " + required + " gerekli) | URL: " + driver().getCurrentUrl()
-            );
-        }
-
-        System.out.println("Ürün listesi görünür (" + findProductCards().size() + " ürün)");
-    }
-
     /**
      * İkinci satırdaki ilk ürüne tıklar; ürün yeni sekmede açılır ve o sekmeye geçilir.
      *

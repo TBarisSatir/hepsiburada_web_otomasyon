@@ -1,0 +1,17 @@
+# login with config credentials
+* hover user info
+* click login
+* enter username from config
+* enter password from config
+* click login submit
+* verify user is logged in
+
+# add second row first product to cart for <keyword>
+* search for <keyword>
+* open second row first product
+* add product to cart from detail page
+* open cart from header
+
+# verify selected product is in cart
+* verify product name is visible in cart
+* verify product basic details in cart

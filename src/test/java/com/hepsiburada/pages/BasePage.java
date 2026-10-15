@@ -129,22 +129,6 @@ public abstract class BasePage {
         throw new AssertionError("Eleman bulunamadı veya sürekli yenilendi: " + locator);
     }
 
-    /** Verilen input şu an odakta (aktif eleman) mı? */
-    protected boolean isFocused(By locator) {
-        try {
-            WebElement element = findDisplayedInput(locator);
-            if (element == null) {
-                return false;
-            }
-            Object result = js().executeScript(
-                    "return document.activeElement === arguments[0];", element
-            );
-            return Boolean.TRUE.equals(result);
-        } catch (StaleElementReferenceException e) {
-            return false;
-        }
-    }
-
     /** Input'un şu anki değerini döndürür (bulunamazsa boş string). */
     protected String currentValue(By locator) {
         try {
