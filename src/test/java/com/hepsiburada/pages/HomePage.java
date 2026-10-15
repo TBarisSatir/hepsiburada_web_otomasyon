@@ -57,61 +57,62 @@ public class HomePage extends BasePage {
 
     /**
      * Arama kutusuna kelimeyi yazar ve Enter'a basar.
-     * Kutu yazarken yeniden render edilebildiği için eleman her adımda yeniden bulunur.
+     * Kutu yazarken yeniden render edilebildiği için eleman her adımda yeniden bulunur;
+     * sabit beklemeler yerine koşul gerçekleşene kadar beklenir.
      */
     public void searchFor(String keyword) {
 
         WebDriverWait wait = waitFor(15);
 
-        // 1) Sayfa tamamen yüklensin, header/arama alanı otursun
+        // 1) Sayfa tamamen yüklensin, arama alanına tıklanabilsin
         wait.until(d -> "complete".equals(js().executeScript("return document.readyState")));
-        wait.until(ExpectedConditions.elementToBeClickable(searchArea));
-        pause(800, 1200);
 
-        // 2) Arama alanına tıkla ve arama kutusunun görünmesini bekle
-        for (int i = 0; i < 3; i++) {
-            try {
-                wait.until(ExpectedConditions.elementToBeClickable(searchArea)).click();
-                break;
-            } catch (StaleElementReferenceException | ElementClickInterceptedException ignored) {
-                pause(400, 700);
-            }
-        }
+        // 2) Arama alanına tıkla (yeniden render edilirse tekrar dener) ve kutunun görünmesini bekle
+        waitFor(15).withMessage("Arama kutusu görünür olmadı: " + searchInput)
+                .until(d -> {
+                    if (findDisplayedInput(searchInput) != null) {
+                        return true;
+                    }
+                    try {
+                        d.findElement(searchArea).click();
+                    } catch (NoSuchElementException | StaleElementReferenceException
+                             | ElementClickInterceptedException ignored) {
+                    }
+                    return false;
+                });
 
-        WebDriverWait inputWait = waitFor(15);
-        inputWait.withMessage(
-                "Arama kutusu görünür olmadı: " + searchInput
-        );
-        inputWait.until(d -> findDisplayedInput(searchInput) != null);
-
-        // Kutunun tamamen yerleşmesi için bekle, sonra odağa girmesini dene (zorunlu değil)
-        pause(600, 1000);
-
-        for (int i = 0; i < 5 && !isFocused(searchInput); i++) {
-            try {
-                WebElement input = findDisplayedInput(searchInput);
-                if (input != null) {
-                    input.click();
+        // Odağa girmesini dene (zorunlu değil)
+        try {
+            waitFor(3).until(d -> {
+                if (isFocused(searchInput)) {
+                    return true;
                 }
-            } catch (StaleElementReferenceException | ElementClickInterceptedException ignored) {
-            }
-            pause(300, 500);
+                try {
+                    WebElement input = findDisplayedInput(searchInput);
+                    if (input != null) {
+                        input.click();
+                    }
+                } catch (StaleElementReferenceException | ElementClickInterceptedException ignored) {
+                }
+                return false;
+            });
+        } catch (TimeoutException ignored) {
         }
-
-        pause(300, 600);
 
         // 3) Yaz, değeri doğrula; eksik/yanlışsa temizleyip tekrar dene
         boolean typed = false;
 
         for (int attempt = 1; attempt <= 3 && !typed; attempt++) {
 
-            typeHumanResilient(searchInput, keyword);
+            sendKeysResilient(searchInput, keyword);
 
-            if (keyword.trim().equalsIgnoreCase(currentValue(searchInput).trim())) {
+            try {
+                waitFor(2).until(d ->
+                        keyword.trim().equalsIgnoreCase(currentValue(searchInput).trim())
+                );
                 typed = true;
-            } else {
+            } catch (TimeoutException e) {
                 clearInput(searchInput);
-                pause(500, 900);
             }
         }
 
@@ -122,7 +123,6 @@ public class HomePage extends BasePage {
             );
         }
 
-        pause(350, 700);
         sendKeysResilient(searchInput, Keys.ENTER);
 
         // Arama sonuçlarının gelmesini bekle

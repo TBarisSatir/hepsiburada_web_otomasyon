@@ -89,14 +89,6 @@ public abstract class BasePage {
         throw new AssertionError("Eleman bulunamadı veya sürekli yenilendi: " + locator);
     }
 
-    /** Karakter karakter yazar; her karakterde elemanı yeniden bulur. */
-    protected void typeHumanResilient(By locator, String text) {
-        for (char c : text.toCharArray()) {
-            sendKeysResilient(locator, String.valueOf(c));
-            pause(60, 180);
-        }
-    }
-
     /** Verilen input şu an odakta (aktif eleman) mı? */
     protected boolean isFocused(By locator) {
         try {

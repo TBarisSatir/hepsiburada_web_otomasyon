@@ -44,7 +44,6 @@ public class ProductDetailPage extends BasePage {
         );
 
         scrollIntoViewCenter(button);
-        pause(400, 900);
         clickWithJsFallback(button);
 
         WebElement goToCart = wait.until(
