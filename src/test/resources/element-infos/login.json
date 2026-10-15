@@ -1,0 +1,17 @@
+[
+  {
+    "key": "login_username_input",
+    "value": "#txtUserName, input[name='username'][autocomplete='username']",
+    "type": "css"
+  },
+  {
+    "key": "login_password_input",
+    "value": "txtPassword",
+    "type": "id"
+  },
+  {
+    "key": "login_submit_button",
+    "value": "btnLogin",
+    "type": "id"
+  }
+]

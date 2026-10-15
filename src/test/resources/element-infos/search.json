@@ -1,0 +1,17 @@
+[
+  {
+    "key": "search_product_card_candidates",
+    "value": "li[id^='i']",
+    "type": "css"
+  },
+  {
+    "key": "search_product_card_by_index",
+    "value": "i%s",
+    "type": "id"
+  },
+  {
+    "key": "search_product_link",
+    "value": "a[title]",
+    "type": "css"
+  }
+]

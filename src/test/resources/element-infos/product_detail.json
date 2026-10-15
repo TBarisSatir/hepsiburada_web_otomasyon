@@ -1,0 +1,22 @@
+[
+  {
+    "key": "product_detail_add_to_cart_button",
+    "value": "button[data-test-id='addToCart']",
+    "type": "css"
+  },
+  {
+    "key": "product_detail_go_to_cart_button",
+    "value": "//button[normalize-space()='Sepete git']",
+    "type": "xpath"
+  },
+  {
+    "key": "product_detail_popup_close_button",
+    "value": "//button[normalize-space()='Sepete git']/ancestor::div[contains(@class,'checkoutui-Modal')]//a[.//*[name()='svg']]",
+    "type": "xpath"
+  },
+  {
+    "key": "product_detail_heading",
+    "value": "h1",
+    "type": "tagName"
+  }
+]

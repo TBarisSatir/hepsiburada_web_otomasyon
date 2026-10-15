@@ -6,16 +6,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.hepsiburada.helper.ElementHelper;
+
 public class ProductDetailPage extends BasePage {
 
-    private final By addToCartButton = By.cssSelector("button[data-test-id='addToCart']");
-    private final By goToCartButton = By.xpath("//button[normalize-space()='Sepete git']");
-    private final By popupCloseButton = By.xpath(
-            "//button[normalize-space()='Sepete git']"
-                    + "/ancestor::div[contains(@class,'checkoutui-Modal')]"
-                    + "//a[.//*[name()='svg']]"
-    );
-    private final By heading = By.tagName("h1");
+    // Locator'lar: resources/element-infos/product_detail.json
+    private final By addToCartButton = ElementHelper.getBy("product_detail_add_to_cart_button");
+    private final By goToCartButton = ElementHelper.getBy("product_detail_go_to_cart_button");
+    private final By popupCloseButton = ElementHelper.getBy("product_detail_popup_close_button");
+    private final By heading = ElementHelper.getBy("product_detail_heading");
 
     /** Ürün detay sayfasındaki "Sepete Ekle" butonu gelene kadar bekler. */
     public void waitUntilLoaded() {
