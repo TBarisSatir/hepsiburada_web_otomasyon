@@ -638,3 +638,24 @@
 12-10-2026 14:46:08.923 [Gauge] [DEBUG] Spec file added / modified: C:\Users\baris\IdeaProjects\HepsiburadaAutomation\specs\hepsiburada.spec
 12-10-2026 14:47:06.803 [Gauge] [DEBUG] Spec file added / modified: C:\Users\baris\IdeaProjects\HepsiburadaAutomation\specs\hepsiburada.spec
 12-10-2026 14:47:06.825 [Gauge] [DEBUG] Spec file added / modified: C:\Users\baris\IdeaProjects\HepsiburadaAutomation\specs\hepsiburada.spec
+12-10-2026 14:54:33.386 [Gauge] [INFO] Initializing concepts cache with 0 concepts
+12-10-2026 14:54:33.391 [Gauge] [INFO] Initializing specs cache with 1 specs
+12-10-2026 14:54:33.391 [Gauge] [DEBUG] Adding specs from C:\Users\baris\IdeaProjects\HepsiburadaAutomation-Public\specs\hepsiburada.spec
+12-10-2026 14:54:33.391 [Gauge] [INFO] Initializing steps cache with 1 steps
+12-10-2026 14:54:33.391 [Gauge] [INFO] Gauge daemon initialized and listening on port: 63737
+12-10-2026 14:54:33.393 [Gauge] [DEBUG] Watching directory: C:\Users\baris\IdeaProjects\HepsiburadaAutomation-Public\specs
+12-10-2026 14:54:33.394 [Gauge] [DEBUG] Found 1 files
+13-10-2026 08:51:05.214 [Gauge] [INFO] Initializing concepts cache with 0 concepts
+13-10-2026 08:51:05.313 [Gauge] [INFO] Initializing specs cache with 1 specs
+13-10-2026 08:51:05.323 [Gauge] [DEBUG] Adding specs from C:\Users\baris\IdeaProjects\HepsiburadaAutomation-Public\specs\hepsiburada.spec
+13-10-2026 08:51:05.323 [Gauge] [INFO] Initializing steps cache with 1 steps
+13-10-2026 08:51:05.323 [Gauge] [INFO] Gauge daemon initialized and listening on port: 62085
+13-10-2026 08:51:05.339 [Gauge] [DEBUG] Watching directory: C:\Users\baris\IdeaProjects\HepsiburadaAutomation-Public\specs
+13-10-2026 08:51:05.339 [Gauge] [DEBUG] Found 1 files
+15-10-2026 10:00:52.776 [Gauge] [INFO] Initializing concepts cache with 0 concepts
+15-10-2026 10:00:52.797 [Gauge] [INFO] Initializing specs cache with 1 specs
+15-10-2026 10:00:52.797 [Gauge] [DEBUG] Adding specs from C:\Users\baris\IdeaProjects\HepsiburadaAutomation-Public\specs\hepsiburada.spec
+15-10-2026 10:00:52.797 [Gauge] [INFO] Initializing steps cache with 1 steps
+15-10-2026 10:00:52.797 [Gauge] [INFO] Gauge daemon initialized and listening on port: 62948
+15-10-2026 10:00:52.799 [Gauge] [DEBUG] Watching directory: C:\Users\baris\IdeaProjects\HepsiburadaAutomation-Public\specs
+15-10-2026 10:00:52.799 [Gauge] [DEBUG] Found 1 files

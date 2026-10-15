@@ -129,16 +129,6 @@ public class StepImplementation {
         System.out.println("Arama sonuçları kullanıcı girdisine uygun gelir");
     }
 
-    @Step("verify product list is visible")
-    public void verifyProductListVisible() {
-        searchResultsPage.verifyProductListVisible();
-    }
-
-    @Step("verify product grid layout")
-    public void verifyProductGridLayout() {
-        searchResultsPage.verifyGridLayout();
-    }
-
     @Step("open second row first product")
     public void openSecondRowFirstProduct() {
         selectedProductName = searchResultsPage.openSecondRowFirstProduct();

@@ -12481,3 +12481,282 @@ Total time taken: 53.339s
 12-10-2026 14:29:36.139 [java] [INFO] Ýkinci satýrdaki ilk ürünün sayfasýna yönlenir
 12-10-2026 14:29:36.139 [java] [INFO] Ürün: Acer Aspire Go Intel Core 5 120U 16GB 512GB SSD Freedos 16" Taþýnabilir Bilgisayar NX.JT2EY.002
 12-10-2026 14:29:36.148 [java] [DEBUG] Executing 'add product to cart from detail page' using 'class com.hepsiburada.step.StepImplementation.addProductToCartFromDetailPage
+15-10-2026 10:04:40.166 [Gauge] [DEBUG] Created gauge_screenshots_dir at C:\Users\baris\IdeaProjects\HepsiburadaAutomation-Public\.gauge\screenshots
+15-10-2026 10:04:40.184 [Gauge] [DEBUG] Plugin java is already installed.
+15-10-2026 10:04:40.198 [Gauge] [DEBUG] Plugin html-report is already installed.
+15-10-2026 10:04:40.211 [Gauge] [DEBUG] Plugin screenshot is already installed.
+15-10-2026 10:04:40.212 [Gauge] [DEBUG] Parsing started.
+15-10-2026 10:04:40.212 [Gauge] [DEBUG] Started concepts parsing.
+15-10-2026 10:04:40.233 [Gauge] [DEBUG] 0 concepts parsing completed.
+15-10-2026 10:04:40.234 [Gauge] [DEBUG] Started specifications parsing.
+15-10-2026 10:04:40.235 [Gauge] [DEBUG] 1 specifications parsing completed.
+15-10-2026 10:04:40.235 [Gauge] [DEBUG] Parsing completed.
+15-10-2026 10:04:40.274 [java] [DEBUG] ***** Printing Properties/Env Values *****
+15-10-2026 10:04:40.275 [java] [DEBUG] PATH: C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\apache-maven-3.9.14\bin;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot\bin;C:\Program Files\Git\cmd;C:\Users\baris\AppData\Local\Microsoft\WindowsApps;C:\Users\baris\AppData\Local\Microsoft\WinGet\Packages\Gauge.Gauge_Microsoft.Winget.Source_8wekyb3d8bbwe;;C:\Users\baris\AppData\Roaming\gauge\plugins\screenshot\1.0.2
+15-10-2026 10:04:40.275 [java] [DEBUG] JAVA_HOME: C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot\
+15-10-2026 10:04:40.275 [java] [DEBUG] gauge_project_root: C:\Users\baris\IdeaProjects\HepsiburadaAutomation-Public
+15-10-2026 10:04:40.275 [java] [DEBUG] gauge_parallel_streams_count: 8
+15-10-2026 10:04:40.275 [java] [DEBUG] gauge_reports_dir: reports
+15-10-2026 10:04:40.275 [java] [DEBUG] overwrite_reports: true
+15-10-2026 10:04:40.275 [java] [DEBUG] logs_directory: logs
+15-10-2026 10:04:40.275 [java] [DEBUG] enable_multithreading: 
+15-10-2026 10:04:40.275 [java] [DEBUG] gauge_specs_dir: specs
+15-10-2026 10:04:40.275 [java] [DEBUG] csv_delimiter: ,
+15-10-2026 10:04:40.275 [java] [DEBUG] gauge_java_home: 
+15-10-2026 10:04:40.275 [java] [DEBUG] gauge_custom_build_path: 
+15-10-2026 10:04:40.275 [java] [DEBUG] gauge_additional_libs: 
+15-10-2026 10:04:40.275 [java] [DEBUG] gauge_jvm_args: 
+15-10-2026 10:04:40.275 [java] [DEBUG] gauge_custom_compile_dir: 
+15-10-2026 10:04:40.275 [java] [DEBUG] gauge_clear_state_level: 
+15-10-2026 10:04:40.275 [java] [DEBUG] ***** END *****
+15-10-2026 10:04:40.872 [Gauge] [DEBUG] Checking updates...
+15-10-2026 10:04:40.875 [Gauge] [DEBUG] Downloading https://downloads.gauge.org/plugin/html-report?l=java&p=html-report,java,screenshot&o=windows&a=amd64
+15-10-2026 10:04:41.154 [Gauge] [DEBUG] Downloading https://downloads.gauge.org/plugin/java?l=java&p=html-report,java,screenshot&o=windows&a=amd64
+15-10-2026 10:04:41.247 [Gauge] [DEBUG] Downloading https://downloads.gauge.org/plugin/screenshot?l=java&p=html-report,java,screenshot&o=windows&a=amd64
+15-10-2026 10:04:47.075 [java] [DEBUG] classpath set to C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.base;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.compiler;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.datatransfer;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.desktop;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.instrument;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.logging;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.management;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.management.rmi;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.naming;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.net.http;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.prefs;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.rmi;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.scripting;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.se;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.security.jgss;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.security.sasl;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.smartcardio;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.sql;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.sql.rowset;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.transaction.xa;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.xml;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.xml.crypto;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.accessibility;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.attach;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.charsets;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.compiler;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.crypto.cryptoki;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.crypto.ec;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.crypto.mscapi;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.dynalink;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.editpad;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.hotspot.agent;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.httpserver;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.incubator.vector;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.internal.ed;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.internal.jvmstat;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.internal.le;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.internal.opt;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.internal.vm.ci;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.internal.vm.compiler;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.internal.vm.compiler.management;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.jartool;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.javadoc;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.jcmd;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.jconsole;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.jdeps;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.jdi;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.jdwp.agent;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.jfr;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.jlink;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.jpackage;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.jshell;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.jsobject;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.jstatd;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.localedata;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.management;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.management.agent;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.management.jfr;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.naming.dns;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.naming.rmi;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.net;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.nio.mapmode;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.random;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.sctp;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.security.auth;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.security.jgss;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.unsupported;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.unsupported.desktop;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.xml.dom;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.zipfs;C:\Users\baris\IdeaProjects\HepsiburadaAutomation-Public\target\test-classes;C:\Users\baris\IdeaProjects\HepsiburadaAutomation-Public\target\classes;C:\Users\baris\.m2\repository\com\thoughtworks\gauge\gauge-java\1.0.3\gauge-java-1.0.3.jar;C:\Users\baris\.m2\repository\org\assertj\assertj-core\3.27.7\assertj-core-3.27.7.jar;C:\Users\baris\.m2\repository\net\bytebuddy\byte-buddy\1.18.3\byte-buddy-1.18.3.jar;C:\Users\baris\.m2\repository\org\reflections\reflections\0.10.2\reflections-0.10.2.jar;C:\Users\baris\.m2\repository\org\javassist\javassist\3.28.0-GA\javassist-3.28.0-GA.jar;C:\Users\baris\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\baris\.m2\repository\com\github\javaparser\javaparser-core\3.28.2\javaparser-core-3.28.2.jar;C:\Users\baris\.m2\repository\com\google\protobuf\protobuf-java\4.35.1\protobuf-java-4.35.1.jar;C:\Users\baris\.m2\repository\com\google\guava\guava\33.6.0-jre\guava-33.6.0-jre.jar;C:\Users\baris\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\baris\.m2\repository\io\grpc\grpc-api\1.83.1\grpc-api-1.83.1.jar;C:\Users\baris\.m2\repository\io\grpc\grpc-netty-shaded\1.83.1\grpc-netty-shaded-1.83.1.jar;C:\Users\baris\.m2\repository\io\grpc\grpc-util\1.83.1\grpc-util-1.83.1.jar;C:\Users\baris\.m2\repository\io\grpc\grpc-core\1.83.1\grpc-core-1.83.1.jar;C:\Users\baris\.m2\repository\io\grpc\grpc-context\1.83.1\grpc-context-1.83.1.jar;C:\Users\baris\.m2\repository\io\perfmark\perfmark-api\0.27.0\perfmark-api-0.27.0.jar;C:\Users\baris\.m2\repository\io\grpc\grpc-protobuf\1.83.1\grpc-protobuf-1.83.1.jar;C:\Users\baris\.m2\repository\com\google\api\grpc\proto-google-common-protos\2.64.1\proto-google-common-protos-2.64.1.jar;C:\Users\baris\.m2\repository\io\grpc\grpc-protobuf-lite\1.83.1\grpc-protobuf-lite-1.83.1.jar;C:\Users\baris\.m2\repository\io\grpc\grpc-stub\1.83.1\grpc-stub-1.83.1.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-java\4.36.0\selenium-java-4.36.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-api\4.36.0\selenium-api-4.36.0.jar;C:\Users\baris\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.36.0\selenium-chrome-driver-4.36.0.jar;C:\Users\baris\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.36.0\selenium-chromium-driver-4.36.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-json\4.36.0\selenium-json-4.36.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.36.0\selenium-manager-4.36.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v138\4.36.0\selenium-devtools-v138-4.36.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v139\4.36.0\selenium-devtools-v139-4.36.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v140\4.36.0\selenium-devtools-v140-4.36.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.36.0\selenium-edge-driver-4.36.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.36.0\selenium-firefox-driver-4.36.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-http\4.36.0\selenium-http-4.36.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.36.0\selenium-ie-driver-4.36.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.36.0\selenium-remote-driver-4.36.0.jar;C:\Users\baris\.m2\repository\io\opentelemetry\opentelemetry-api\1.54.0\opentelemetry-api-1.54.0.jar;C:\Users\baris\.m2\repository\io\opentelemetry\opentelemetry-context\1.54.0\opentelemetry-context-1.54.0.jar;C:\Users\baris\.m2\repository\io\opentelemetry\opentelemetry-common\1.54.0\opentelemetry-common-1.54.0.jar;C:\Users\baris\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.54.0\opentelemetry-exporter-logging-1.54.0.jar;C:\Users\baris\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.54.0\opentelemetry-sdk-common-1.54.0.jar;C:\Users\baris\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.54.0\opentelemetry-sdk-extension-autoconfigure-spi-1.54.0.jar;C:\Users\baris\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.54.0\opentelemetry-sdk-extension-autoconfigure-1.54.0.jar;C:\Users\baris\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.54.0\opentelemetry-sdk-trace-1.54.0.jar;C:\Users\baris\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.54.0\opentelemetry-sdk-1.54.0.jar;C:\Users\baris\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.54.0\opentelemetry-sdk-metrics-1.54.0.jar;C:\Users\baris\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.54.0\opentelemetry-sdk-logs-1.54.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-os\4.36.0\selenium-os-4.36.0.jar;C:\Users\baris\.m2\repository\org\apache\commons\commons-exec\1.5.0\commons-exec-1.5.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.36.0\selenium-safari-driver-4.36.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-support\4.36.0\selenium-support-4.36.0.jar;C:\Users\baris\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar;C:\Users\baris\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar
+15-10-2026 10:04:47.173 [java] [DEBUG] found java executable in C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot\bin\java.exe
+15-10-2026 10:04:47.173 [java] [DEBUG] running - C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot\bin\java.exe [-Dfile.encoding=UTF-8 com.thoughtworks.gauge.GaugeRuntime --start]
+15-10-2026 10:04:47.173 [java] [DEBUG] stdout/stderr is logged to logs\9740-java.exe.out
+15-10-2026 10:04:47.632 [java] [DEBUG] multithreading is set to false
+15-10-2026 10:04:48.354 [java] [DEBUG] Using reflection to scan dependencies for gauge implementations...
+15-10-2026 10:04:48.422 [java] [ERROR] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+15-10-2026 10:04:48.422 [java] [ERROR] SLF4J: Defaulting to no-operation (NOP) logger implementation
+15-10-2026 10:04:48.422 [java] [ERROR] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+15-10-2026 10:04:50.076 [java] [DEBUG] gauge-java took 2439milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value.
+15-10-2026 10:04:50.076 [java] [DEBUG] run 'gauge config runner_connection_timeout' and verify that it is < 2439
+15-10-2026 10:04:50.077 [java] [DEBUG] starting gRPC server...
+15-10-2026 10:04:50.328 [java] [DEBUG] started gRPC server on port 64538
+15-10-2026 10:04:50.328 [Gauge] [DEBUG] Attempting to connect to grpc server at port: 64538
+15-10-2026 10:04:50.328 [Gauge] [DEBUG] Successfully made the connection with runner with port: 64538
+15-10-2026 10:04:50.328 [Gauge] [DEBUG] Validation started.
+15-10-2026 10:04:51.716 [java] [DEBUG] Scanning packages for steps
+15-10-2026 10:04:51.731 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.enterPasswordFromConfig' and 'com.hepsiburada.step.StepImplementation.enterPasswordFromConfig'
+15-10-2026 10:04:51.733 [java] [DEBUG] Found enter password from config in current project scope.
+15-10-2026 10:04:51.734 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.verifyProductListVisible' and 'com.hepsiburada.step.StepImplementation.verifyProductListVisible'
+15-10-2026 10:04:51.734 [java] [DEBUG] Found verify product list is visible in current project scope.
+15-10-2026 10:04:51.734 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.enterPassword' and 'com.hepsiburada.step.StepImplementation.enterPassword'
+15-10-2026 10:04:51.734 [java] [DEBUG] Found enter password {} in current project scope.
+15-10-2026 10:04:51.734 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.verifyProductBasicDetailsInCart' and 'com.hepsiburada.step.StepImplementation.verifyProductBasicDetailsInCart'
+15-10-2026 10:04:51.735 [java] [DEBUG] Found verify product basic details in cart in current project scope.
+15-10-2026 10:04:51.735 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.openCartFromHeader' and 'com.hepsiburada.step.StepImplementation.openCartFromHeader'
+15-10-2026 10:04:51.735 [java] [DEBUG] Found open cart from header in current project scope.
+15-10-2026 10:04:51.736 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.addProductToCartFromDetailPage' and 'com.hepsiburada.step.StepImplementation.addProductToCartFromDetailPage'
+15-10-2026 10:04:51.736 [java] [DEBUG] Found add product to cart from detail page in current project scope.
+15-10-2026 10:04:51.736 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.verifyUserLoggedIn' and 'com.hepsiburada.step.StepImplementation.verifyUserLoggedIn'
+15-10-2026 10:04:51.736 [java] [DEBUG] Found verify user is logged in in current project scope.
+15-10-2026 10:04:51.736 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.verifyProductNameVisibleInCart' and 'com.hepsiburada.step.StepImplementation.verifyProductNameVisibleInCart'
+15-10-2026 10:04:51.736 [java] [DEBUG] Found verify product name is visible in cart in current project scope.
+15-10-2026 10:04:51.736 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.clickLogin' and 'com.hepsiburada.step.StepImplementation.clickLogin'
+15-10-2026 10:04:51.736 [java] [DEBUG] Found click login in current project scope.
+15-10-2026 10:04:51.737 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.openSecondRowFirstProduct' and 'com.hepsiburada.step.StepImplementation.openSecondRowFirstProduct'
+15-10-2026 10:04:51.737 [java] [DEBUG] Found open second row first product in current project scope.
+15-10-2026 10:04:51.737 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.searchForProduct' and 'com.hepsiburada.step.StepImplementation.searchForProduct'
+15-10-2026 10:04:51.737 [java] [DEBUG] Found search for {} in current project scope.
+15-10-2026 10:04:51.737 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.goToLoginPage' and 'com.hepsiburada.step.StepImplementation.goToLoginPage'
+15-10-2026 10:04:51.737 [java] [DEBUG] Found go to login page in current project scope.
+15-10-2026 10:04:51.738 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.verifyProductGridLayout' and 'com.hepsiburada.step.StepImplementation.verifyProductGridLayout'
+15-10-2026 10:04:51.738 [java] [DEBUG] Found verify product grid layout in current project scope.
+15-10-2026 10:04:51.738 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.enterUsername' and 'com.hepsiburada.step.StepImplementation.enterUsername'
+15-10-2026 10:04:51.738 [java] [DEBUG] Found enter username {} in current project scope.
+15-10-2026 10:04:51.739 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.enterUsernameFromConfig' and 'com.hepsiburada.step.StepImplementation.enterUsernameFromConfig'
+15-10-2026 10:04:51.739 [java] [DEBUG] Found enter username from config in current project scope.
+15-10-2026 10:04:51.739 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.openChrome' and 'com.hepsiburada.step.StepImplementation.openChrome'
+15-10-2026 10:04:51.739 [java] [DEBUG] Found open chrome in current project scope.
+15-10-2026 10:04:51.739 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.goToHepsiburada' and 'com.hepsiburada.step.StepImplementation.goToHepsiburada'
+15-10-2026 10:04:51.739 [java] [DEBUG] Found go to hepsiburada in current project scope.
+15-10-2026 10:04:51.741 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.hoverUserInfo' and 'com.hepsiburada.step.StepImplementation.hoverUserInfo'
+15-10-2026 10:04:51.741 [java] [DEBUG] Found hover user info in current project scope.
+15-10-2026 10:04:51.741 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.clickLoginSubmit' and 'com.hepsiburada.step.StepImplementation.clickLoginSubmit'
+15-10-2026 10:04:51.741 [java] [DEBUG] Found click login submit in current project scope.
+15-10-2026 10:04:51.741 [java] [DEBUG] Scanning packages for hooks
+15-10-2026 10:04:51.757 [java] [DEBUG] Scanned steps (using static parsing + reflections): 
+15-10-2026 10:04:51.758 [java] [DEBUG] 	open chrome : public void openChrome()
+15-10-2026 10:04:51.758 [java] [DEBUG] 	verify product list is visible : public void verifyProductListVisible()
+15-10-2026 10:04:51.758 [java] [DEBUG] 	enter username from config : public void enterUsernameFromConfig()
+15-10-2026 10:04:51.758 [java] [DEBUG] 	verify user is logged in : public void verifyUserLoggedIn()
+15-10-2026 10:04:51.758 [java] [DEBUG] 	enter password {} : public void enterPassword(String password)
+15-10-2026 10:04:51.758 [java] [DEBUG] 	go to hepsiburada : public void goToHepsiburada()
+15-10-2026 10:04:51.758 [java] [DEBUG] 	verify product basic details in cart : public void verifyProductBasicDetailsInCart()
+15-10-2026 10:04:51.758 [java] [DEBUG] 	hover user info : public void hoverUserInfo()
+15-10-2026 10:04:51.758 [java] [DEBUG] 	enter username {} : public void enterUsername(String username)
+15-10-2026 10:04:51.758 [java] [DEBUG] 	click login submit : public void clickLoginSubmit()
+15-10-2026 10:04:51.758 [java] [DEBUG] 	search for {} : public void searchForProduct(String keyword)
+15-10-2026 10:04:51.758 [java] [DEBUG] 	verify product grid layout : public void verifyProductGridLayout()
+15-10-2026 10:04:51.758 [java] [DEBUG] 	go to login page : public void goToLoginPage()
+15-10-2026 10:04:51.759 [java] [DEBUG] 	enter password from config : public void enterPasswordFromConfig()
+15-10-2026 10:04:51.759 [java] [DEBUG] 	add product to cart from detail page : public void addProductToCartFromDetailPage()
+15-10-2026 10:04:51.759 [java] [DEBUG] 	open second row first product : public void openSecondRowFirstProduct()
+15-10-2026 10:04:51.759 [java] [DEBUG] 	open cart from header : public void openCartFromHeader()
+15-10-2026 10:04:51.759 [java] [DEBUG] 	click login : public void clickLogin()
+15-10-2026 10:04:51.759 [java] [DEBUG] 	verify product name is visible in cart : public void verifyProductNameVisibleInCart()
+15-10-2026 10:04:52.885 [Gauge] [DEBUG] Validation completed.
+15-10-2026 10:04:52.886 [Gauge] [DEBUG] Run started
+15-10-2026 10:04:52.888 [Gauge] [DEBUG] Starting Html Report plugin
+15-10-2026 10:04:53.925 [html-report] [DEBUG] Setting MaxRecvMsgSize = 1024 MB
+15-10-2026 10:04:53.925 [Gauge] [DEBUG] Attempting to connect to grpc server at port: 64542
+15-10-2026 10:04:53.925 [Gauge] [DEBUG] Successfully made the connection with plugin with port: 64542
+15-10-2026 10:04:53.926 [Gauge] [DEBUG] Initialising suite data store.
+15-10-2026 10:04:54.037 [java] [DEBUG] Executing 'open chrome' using 'class com.hepsiburada.step.StepImplementation.openChrome
+15-10-2026 10:04:58.983 [java] [ERROR] Eki 15, 2026 10:04:58 ÖÖ org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+15-10-2026 10:04:58.983 [java] [ERROR] WARNING: Unable to find CDP implementation matching 155
+15-10-2026 10:04:58.987 [java] [ERROR] Eki 15, 2026 10:04:58 ÖÖ org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+15-10-2026 10:04:58.987 [java] [ERROR] WARNING: Unable to find version of CDP to use for 155.0.8059.79. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+15-10-2026 10:04:59.040 [java] [DEBUG] Executing 'go to hepsiburada' using 'class com.hepsiburada.step.StepImplementation.goToHepsiburada
+15-10-2026 10:05:08.086 [java] [DEBUG] Executing 'hover user info' using 'class com.hepsiburada.step.StepImplementation.hoverUserInfo
+15-10-2026 10:05:08.263 [java] [DEBUG] Executing 'click login' using 'class com.hepsiburada.step.StepImplementation.clickLogin
+15-10-2026 10:05:11.078 [java] [DEBUG] Executing 'enter username from config' using 'class com.hepsiburada.step.StepImplementation.enterUsernameFromConfig
+15-10-2026 10:05:15.436 [java] [DEBUG] Executing 'enter password from config' using 'class com.hepsiburada.step.StepImplementation.enterPasswordFromConfig
+15-10-2026 10:05:18.213 [java] [DEBUG] Executing 'click login submit' using 'class com.hepsiburada.step.StepImplementation.clickLoginSubmit
+15-10-2026 10:05:20.166 [java] [DEBUG] Executing 'verify user is logged in' using 'class com.hepsiburada.step.StepImplementation.verifyUserLoggedIn
+15-10-2026 10:05:23.046 [html-report] [DEBUG] Transformed SuiteResult to report structure
+15-10-2026 10:05:23.369 [html-report] [INFO] Successfully generated html-report to => C:\Users\baris\IdeaProjects\HepsiburadaAutomation-Public\reports\html-report\index.html
+15-10-2026 10:05:23.369 [html-report] [DEBUG] Done generating HTML report using theme from C:\Users\baris\AppData\Roaming\gauge\plugins\html-report\4.4.7\themes\default
+15-10-2026 10:05:23.370 [Gauge] [DEBUG] Sending kill message to Html Report plugin.
+15-10-2026 10:05:23.387 [java] [DEBUG] Killing Java runner...
+15-10-2026 10:05:23.387 [java] [DEBUG] Stopping execution pool...
+15-10-2026 10:05:23.387 [java] [DEBUG] Shutting down grpc server...
+15-10-2026 10:05:23.393 [Gauge] [INFO] Specifications:	1 executed	0 passed	1 failed	0 skipped
+15-10-2026 10:05:23.393 [Gauge] [INFO] Scenarios:	1 executed	0 passed	1 failed	0 skipped
+15-10-2026 10:05:23.393 [Gauge] [INFO] 
+Total time taken: 30.058s
+15-10-2026 10:05:23.394 [Gauge] [INFO] Updates are available. Run `gauge update -c` for more info.
+15-10-2026 10:08:18.338 [Gauge] [DEBUG] Created gauge_screenshots_dir at C:\Users\baris\IdeaProjects\HepsiburadaAutomation-Public\.gauge\screenshots
+15-10-2026 10:08:18.341 [Gauge] [DEBUG] Plugin java is already installed.
+15-10-2026 10:08:18.342 [Gauge] [DEBUG] Plugin html-report is already installed.
+15-10-2026 10:08:18.344 [Gauge] [DEBUG] Plugin screenshot is already installed.
+15-10-2026 10:08:18.345 [Gauge] [DEBUG] Parsing started.
+15-10-2026 10:08:18.345 [Gauge] [DEBUG] Started concepts parsing.
+15-10-2026 10:08:18.363 [Gauge] [DEBUG] 0 concepts parsing completed.
+15-10-2026 10:08:18.364 [Gauge] [DEBUG] Started specifications parsing.
+15-10-2026 10:08:18.365 [Gauge] [DEBUG] 1 specifications parsing completed.
+15-10-2026 10:08:18.365 [Gauge] [DEBUG] Parsing completed.
+15-10-2026 10:08:18.408 [java] [DEBUG] ***** Printing Properties/Env Values *****
+15-10-2026 10:08:18.408 [java] [DEBUG] PATH: C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\apache-maven-3.9.14\bin;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot\bin;C:\Program Files\Git\cmd;C:\Users\baris\AppData\Local\Microsoft\WindowsApps;C:\Users\baris\AppData\Local\Microsoft\WinGet\Packages\Gauge.Gauge_Microsoft.Winget.Source_8wekyb3d8bbwe;;C:\Users\baris\AppData\Roaming\gauge\plugins\screenshot\1.0.2
+15-10-2026 10:08:18.408 [java] [DEBUG] JAVA_HOME: C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot\
+15-10-2026 10:08:18.408 [java] [DEBUG] gauge_project_root: C:\Users\baris\IdeaProjects\HepsiburadaAutomation-Public
+15-10-2026 10:08:18.408 [java] [DEBUG] gauge_parallel_streams_count: 8
+15-10-2026 10:08:18.408 [java] [DEBUG] gauge_reports_dir: reports
+15-10-2026 10:08:18.408 [java] [DEBUG] overwrite_reports: true
+15-10-2026 10:08:18.408 [java] [DEBUG] logs_directory: logs
+15-10-2026 10:08:18.408 [java] [DEBUG] enable_multithreading: 
+15-10-2026 10:08:18.408 [java] [DEBUG] gauge_specs_dir: specs
+15-10-2026 10:08:18.408 [java] [DEBUG] csv_delimiter: ,
+15-10-2026 10:08:18.408 [java] [DEBUG] gauge_java_home: 
+15-10-2026 10:08:18.408 [java] [DEBUG] gauge_custom_build_path: 
+15-10-2026 10:08:18.408 [java] [DEBUG] gauge_additional_libs: 
+15-10-2026 10:08:18.408 [java] [DEBUG] gauge_jvm_args: 
+15-10-2026 10:08:18.408 [java] [DEBUG] gauge_custom_compile_dir: 
+15-10-2026 10:08:18.408 [java] [DEBUG] gauge_clear_state_level: 
+15-10-2026 10:08:18.408 [java] [DEBUG] ***** END *****
+15-10-2026 10:08:19.155 [Gauge] [DEBUG] Checking updates...
+15-10-2026 10:08:19.158 [Gauge] [DEBUG] Downloading https://downloads.gauge.org/plugin/html-report?l=java&p=html-report,java,screenshot&o=windows&a=amd64
+15-10-2026 10:08:19.351 [Gauge] [DEBUG] Downloading https://downloads.gauge.org/plugin/java?l=java&p=html-report,java,screenshot&o=windows&a=amd64
+15-10-2026 10:08:19.429 [Gauge] [DEBUG] Downloading https://downloads.gauge.org/plugin/screenshot?l=java&p=html-report,java,screenshot&o=windows&a=amd64
+15-10-2026 10:08:23.932 [java] [DEBUG] classpath set to C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.base;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.compiler;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.datatransfer;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.desktop;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.instrument;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.logging;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.management;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.management.rmi;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.naming;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.net.http;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.prefs;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.rmi;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.scripting;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.se;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.security.jgss;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.security.sasl;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.smartcardio;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.sql;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.sql.rowset;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.transaction.xa;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.xml;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\java.xml.crypto;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.accessibility;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.attach;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.charsets;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.compiler;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.crypto.cryptoki;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.crypto.ec;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.crypto.mscapi;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.dynalink;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.editpad;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.hotspot.agent;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.httpserver;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.incubator.vector;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.internal.ed;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.internal.jvmstat;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.internal.le;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.internal.opt;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.internal.vm.ci;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.internal.vm.compiler;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.internal.vm.compiler.management;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.jartool;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.javadoc;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.jcmd;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.jconsole;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.jdeps;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.jdi;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.jdwp.agent;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.jfr;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.jlink;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.jpackage;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.jshell;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.jsobject;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.jstatd;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.localedata;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.management;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.management.agent;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.management.jfr;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.naming.dns;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.naming.rmi;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.net;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.nio.mapmode;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.random;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.sctp;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.security.auth;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.security.jgss;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.unsupported;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.unsupported.desktop;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.xml.dom;C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot!\jdk.zipfs;C:\Users\baris\IdeaProjects\HepsiburadaAutomation-Public\target\test-classes;C:\Users\baris\IdeaProjects\HepsiburadaAutomation-Public\target\classes;C:\Users\baris\.m2\repository\com\thoughtworks\gauge\gauge-java\1.0.3\gauge-java-1.0.3.jar;C:\Users\baris\.m2\repository\org\assertj\assertj-core\3.27.7\assertj-core-3.27.7.jar;C:\Users\baris\.m2\repository\net\bytebuddy\byte-buddy\1.18.3\byte-buddy-1.18.3.jar;C:\Users\baris\.m2\repository\org\reflections\reflections\0.10.2\reflections-0.10.2.jar;C:\Users\baris\.m2\repository\org\javassist\javassist\3.28.0-GA\javassist-3.28.0-GA.jar;C:\Users\baris\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\baris\.m2\repository\com\github\javaparser\javaparser-core\3.28.2\javaparser-core-3.28.2.jar;C:\Users\baris\.m2\repository\com\google\protobuf\protobuf-java\4.35.1\protobuf-java-4.35.1.jar;C:\Users\baris\.m2\repository\com\google\guava\guava\33.6.0-jre\guava-33.6.0-jre.jar;C:\Users\baris\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\baris\.m2\repository\io\grpc\grpc-api\1.83.1\grpc-api-1.83.1.jar;C:\Users\baris\.m2\repository\io\grpc\grpc-netty-shaded\1.83.1\grpc-netty-shaded-1.83.1.jar;C:\Users\baris\.m2\repository\io\grpc\grpc-util\1.83.1\grpc-util-1.83.1.jar;C:\Users\baris\.m2\repository\io\grpc\grpc-core\1.83.1\grpc-core-1.83.1.jar;C:\Users\baris\.m2\repository\io\grpc\grpc-context\1.83.1\grpc-context-1.83.1.jar;C:\Users\baris\.m2\repository\io\perfmark\perfmark-api\0.27.0\perfmark-api-0.27.0.jar;C:\Users\baris\.m2\repository\io\grpc\grpc-protobuf\1.83.1\grpc-protobuf-1.83.1.jar;C:\Users\baris\.m2\repository\com\google\api\grpc\proto-google-common-protos\2.64.1\proto-google-common-protos-2.64.1.jar;C:\Users\baris\.m2\repository\io\grpc\grpc-protobuf-lite\1.83.1\grpc-protobuf-lite-1.83.1.jar;C:\Users\baris\.m2\repository\io\grpc\grpc-stub\1.83.1\grpc-stub-1.83.1.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-java\4.36.0\selenium-java-4.36.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-api\4.36.0\selenium-api-4.36.0.jar;C:\Users\baris\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.36.0\selenium-chrome-driver-4.36.0.jar;C:\Users\baris\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.36.0\selenium-chromium-driver-4.36.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-json\4.36.0\selenium-json-4.36.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.36.0\selenium-manager-4.36.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v138\4.36.0\selenium-devtools-v138-4.36.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v139\4.36.0\selenium-devtools-v139-4.36.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v140\4.36.0\selenium-devtools-v140-4.36.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.36.0\selenium-edge-driver-4.36.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.36.0\selenium-firefox-driver-4.36.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-http\4.36.0\selenium-http-4.36.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.36.0\selenium-ie-driver-4.36.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.36.0\selenium-remote-driver-4.36.0.jar;C:\Users\baris\.m2\repository\io\opentelemetry\opentelemetry-api\1.54.0\opentelemetry-api-1.54.0.jar;C:\Users\baris\.m2\repository\io\opentelemetry\opentelemetry-context\1.54.0\opentelemetry-context-1.54.0.jar;C:\Users\baris\.m2\repository\io\opentelemetry\opentelemetry-common\1.54.0\opentelemetry-common-1.54.0.jar;C:\Users\baris\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.54.0\opentelemetry-exporter-logging-1.54.0.jar;C:\Users\baris\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.54.0\opentelemetry-sdk-common-1.54.0.jar;C:\Users\baris\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.54.0\opentelemetry-sdk-extension-autoconfigure-spi-1.54.0.jar;C:\Users\baris\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.54.0\opentelemetry-sdk-extension-autoconfigure-1.54.0.jar;C:\Users\baris\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.54.0\opentelemetry-sdk-trace-1.54.0.jar;C:\Users\baris\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.54.0\opentelemetry-sdk-1.54.0.jar;C:\Users\baris\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.54.0\opentelemetry-sdk-metrics-1.54.0.jar;C:\Users\baris\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.54.0\opentelemetry-sdk-logs-1.54.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-os\4.36.0\selenium-os-4.36.0.jar;C:\Users\baris\.m2\repository\org\apache\commons\commons-exec\1.5.0\commons-exec-1.5.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.36.0\selenium-safari-driver-4.36.0.jar;C:\Users\baris\.m2\repository\org\seleniumhq\selenium\selenium-support\4.36.0\selenium-support-4.36.0.jar;C:\Users\baris\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar;C:\Users\baris\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar
+15-10-2026 10:08:23.988 [java] [DEBUG] found java executable in C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot\bin\java.exe
+15-10-2026 10:08:23.988 [java] [DEBUG] running - C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot\bin\java.exe [-Dfile.encoding=UTF-8 com.thoughtworks.gauge.GaugeRuntime --start]
+15-10-2026 10:08:23.988 [java] [DEBUG] stdout/stderr is logged to logs\3920-java.exe.out
+15-10-2026 10:08:24.419 [java] [DEBUG] multithreading is set to false
+15-10-2026 10:08:25.108 [java] [DEBUG] Using reflection to scan dependencies for gauge implementations...
+15-10-2026 10:08:25.163 [java] [ERROR] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+15-10-2026 10:08:25.163 [java] [ERROR] SLF4J: Defaulting to no-operation (NOP) logger implementation
+15-10-2026 10:08:25.163 [java] [ERROR] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+15-10-2026 10:08:26.914 [java] [DEBUG] gauge-java took 2489milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value.
+15-10-2026 10:08:26.914 [java] [DEBUG] run 'gauge config runner_connection_timeout' and verify that it is < 2489
+15-10-2026 10:08:26.915 [java] [DEBUG] starting gRPC server...
+15-10-2026 10:08:27.206 [java] [DEBUG] started gRPC server on port 54127
+15-10-2026 10:08:27.206 [Gauge] [DEBUG] Attempting to connect to grpc server at port: 54127
+15-10-2026 10:08:27.207 [Gauge] [DEBUG] Successfully made the connection with runner with port: 54127
+15-10-2026 10:08:27.207 [Gauge] [DEBUG] Validation started.
+15-10-2026 10:08:28.553 [java] [DEBUG] Scanning packages for steps
+15-10-2026 10:08:28.568 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.enterPasswordFromConfig' and 'com.hepsiburada.step.StepImplementation.enterPasswordFromConfig'
+15-10-2026 10:08:28.570 [java] [DEBUG] Found enter password from config in current project scope.
+15-10-2026 10:08:28.571 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.enterPassword' and 'com.hepsiburada.step.StepImplementation.enterPassword'
+15-10-2026 10:08:28.571 [java] [DEBUG] Found enter password {} in current project scope.
+15-10-2026 10:08:28.572 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.verifyProductBasicDetailsInCart' and 'com.hepsiburada.step.StepImplementation.verifyProductBasicDetailsInCart'
+15-10-2026 10:08:28.572 [java] [DEBUG] Found verify product basic details in cart in current project scope.
+15-10-2026 10:08:28.572 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.openCartFromHeader' and 'com.hepsiburada.step.StepImplementation.openCartFromHeader'
+15-10-2026 10:08:28.572 [java] [DEBUG] Found open cart from header in current project scope.
+15-10-2026 10:08:28.572 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.addProductToCartFromDetailPage' and 'com.hepsiburada.step.StepImplementation.addProductToCartFromDetailPage'
+15-10-2026 10:08:28.572 [java] [DEBUG] Found add product to cart from detail page in current project scope.
+15-10-2026 10:08:28.572 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.verifyUserLoggedIn' and 'com.hepsiburada.step.StepImplementation.verifyUserLoggedIn'
+15-10-2026 10:08:28.572 [java] [DEBUG] Found verify user is logged in in current project scope.
+15-10-2026 10:08:28.573 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.verifyProductNameVisibleInCart' and 'com.hepsiburada.step.StepImplementation.verifyProductNameVisibleInCart'
+15-10-2026 10:08:28.573 [java] [DEBUG] Found verify product name is visible in cart in current project scope.
+15-10-2026 10:08:28.573 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.clickLogin' and 'com.hepsiburada.step.StepImplementation.clickLogin'
+15-10-2026 10:08:28.573 [java] [DEBUG] Found click login in current project scope.
+15-10-2026 10:08:28.573 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.openSecondRowFirstProduct' and 'com.hepsiburada.step.StepImplementation.openSecondRowFirstProduct'
+15-10-2026 10:08:28.573 [java] [DEBUG] Found open second row first product in current project scope.
+15-10-2026 10:08:28.573 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.searchForProduct' and 'com.hepsiburada.step.StepImplementation.searchForProduct'
+15-10-2026 10:08:28.573 [java] [DEBUG] Found search for {} in current project scope.
+15-10-2026 10:08:28.574 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.goToLoginPage' and 'com.hepsiburada.step.StepImplementation.goToLoginPage'
+15-10-2026 10:08:28.574 [java] [DEBUG] Found go to login page in current project scope.
+15-10-2026 10:08:28.574 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.enterUsername' and 'com.hepsiburada.step.StepImplementation.enterUsername'
+15-10-2026 10:08:28.574 [java] [DEBUG] Found enter username {} in current project scope.
+15-10-2026 10:08:28.574 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.enterUsernameFromConfig' and 'com.hepsiburada.step.StepImplementation.enterUsernameFromConfig'
+15-10-2026 10:08:28.574 [java] [DEBUG] Found enter username from config in current project scope.
+15-10-2026 10:08:28.574 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.openChrome' and 'com.hepsiburada.step.StepImplementation.openChrome'
+15-10-2026 10:08:28.574 [java] [DEBUG] Found open chrome in current project scope.
+15-10-2026 10:08:28.575 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.goToHepsiburada' and 'com.hepsiburada.step.StepImplementation.goToHepsiburada'
+15-10-2026 10:08:28.575 [java] [DEBUG] Found go to hepsiburada in current project scope.
+15-10-2026 10:08:28.575 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.hoverUserInfo' and 'com.hepsiburada.step.StepImplementation.hoverUserInfo'
+15-10-2026 10:08:28.575 [java] [DEBUG] Found hover user info in current project scope.
+15-10-2026 10:08:28.575 [java] [DEBUG] Comparing 'com.hepsiburada.step.StepImplementation.clickLoginSubmit' and 'com.hepsiburada.step.StepImplementation.clickLoginSubmit'
+15-10-2026 10:08:28.575 [java] [DEBUG] Found click login submit in current project scope.
+15-10-2026 10:08:28.575 [java] [DEBUG] Scanning packages for hooks
+15-10-2026 10:08:28.588 [java] [DEBUG] Scanned steps (using static parsing + reflections): 
+15-10-2026 10:08:28.588 [java] [DEBUG] 	open chrome : public void openChrome()
+15-10-2026 10:08:28.588 [java] [DEBUG] 	enter username from config : public void enterUsernameFromConfig()
+15-10-2026 10:08:28.588 [java] [DEBUG] 	verify user is logged in : public void verifyUserLoggedIn()
+15-10-2026 10:08:28.588 [java] [DEBUG] 	enter password {} : public void enterPassword(String password)
+15-10-2026 10:08:28.588 [java] [DEBUG] 	go to hepsiburada : public void goToHepsiburada()
+15-10-2026 10:08:28.588 [java] [DEBUG] 	verify product basic details in cart : public void verifyProductBasicDetailsInCart()
+15-10-2026 10:08:28.589 [java] [DEBUG] 	hover user info : public void hoverUserInfo()
+15-10-2026 10:08:28.589 [java] [DEBUG] 	enter username {} : public void enterUsername(String username)
+15-10-2026 10:08:28.589 [java] [DEBUG] 	click login submit : public void clickLoginSubmit()
+15-10-2026 10:08:28.589 [java] [DEBUG] 	search for {} : public void searchForProduct(String keyword)
+15-10-2026 10:08:28.589 [java] [DEBUG] 	go to login page : public void goToLoginPage()
+15-10-2026 10:08:28.589 [java] [DEBUG] 	enter password from config : public void enterPasswordFromConfig()
+15-10-2026 10:08:28.589 [java] [DEBUG] 	add product to cart from detail page : public void addProductToCartFromDetailPage()
+15-10-2026 10:08:28.589 [java] [DEBUG] 	open second row first product : public void openSecondRowFirstProduct()
+15-10-2026 10:08:28.589 [java] [DEBUG] 	open cart from header : public void openCartFromHeader()
+15-10-2026 10:08:28.589 [java] [DEBUG] 	click login : public void clickLogin()
+15-10-2026 10:08:28.590 [java] [DEBUG] 	verify product name is visible in cart : public void verifyProductNameVisibleInCart()
+15-10-2026 10:08:29.902 [Gauge] [DEBUG] Validation completed.
+15-10-2026 10:08:29.903 [Gauge] [DEBUG] Run started
+15-10-2026 10:08:29.906 [Gauge] [DEBUG] Starting Html Report plugin
+15-10-2026 10:08:29.949 [html-report] [DEBUG] Setting MaxRecvMsgSize = 1024 MB
+15-10-2026 10:08:29.949 [Gauge] [DEBUG] Attempting to connect to grpc server at port: 54130
+15-10-2026 10:08:29.950 [Gauge] [DEBUG] Successfully made the connection with plugin with port: 54130
+15-10-2026 10:08:29.951 [Gauge] [DEBUG] Initialising suite data store.
+15-10-2026 10:08:30.064 [java] [DEBUG] Executing 'open chrome' using 'class com.hepsiburada.step.StepImplementation.openChrome
+15-10-2026 10:08:32.688 [java] [ERROR] Eki 15, 2026 10:08:32 ÖÖ org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+15-10-2026 10:08:32.688 [java] [ERROR] WARNING: Unable to find CDP implementation matching 155
+15-10-2026 10:08:32.689 [java] [ERROR] Eki 15, 2026 10:08:32 ÖÖ org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+15-10-2026 10:08:32.689 [java] [ERROR] WARNING: Unable to find version of CDP to use for 155.0.8059.79. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.36.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+15-10-2026 10:08:32.763 [java] [DEBUG] Executing 'go to hepsiburada' using 'class com.hepsiburada.step.StepImplementation.goToHepsiburada
+15-10-2026 10:08:40.831 [java] [DEBUG] Executing 'hover user info' using 'class com.hepsiburada.step.StepImplementation.hoverUserInfo
+15-10-2026 10:08:41.032 [java] [DEBUG] Executing 'click login' using 'class com.hepsiburada.step.StepImplementation.clickLogin
+15-10-2026 10:08:43.726 [java] [DEBUG] Executing 'enter username from config' using 'class com.hepsiburada.step.StepImplementation.enterUsernameFromConfig
+15-10-2026 10:08:48.333 [java] [DEBUG] Executing 'enter password from config' using 'class com.hepsiburada.step.StepImplementation.enterPasswordFromConfig
+15-10-2026 10:08:52.157 [java] [DEBUG] Executing 'click login submit' using 'class com.hepsiburada.step.StepImplementation.clickLoginSubmit
+15-10-2026 10:08:53.430 [java] [DEBUG] Executing 'verify user is logged in' using 'class com.hepsiburada.step.StepImplementation.verifyUserLoggedIn
+15-10-2026 10:09:04.526 [java] [INFO] Kullanýcý baþarýlý þekilde login olur
+15-10-2026 10:09:04.550 [java] [DEBUG] Executing 'search for {}' using 'class com.hepsiburada.step.StepImplementation.searchForProduct
+15-10-2026 10:09:16.247 [java] [INFO] Arama sonuçlarý kullanýcý girdisine uygun gelir
+15-10-2026 10:09:16.259 [java] [DEBUG] Executing 'open second row first product' using 'class com.hepsiburada.step.StepImplementation.openSecondRowFirstProduct
+15-10-2026 10:09:19.995 [java] [INFO] Ýkinci satýrdaki ilk ürünün sayfasýna yönlenir
+15-10-2026 10:09:19.995 [java] [INFO] Ürün: Asus TUF Gaming F16 FX608JHI-TU231 Intel Core i5 14450HX 16GB 512GB SSD RTX5050 Freedos 16" 144Hz Taþýnabilir Bilgisayar
+15-10-2026 10:09:20.004 [java] [DEBUG] Executing 'add product to cart from detail page' using 'class com.hepsiburada.step.StepImplementation.addProductToCartFromDetailPage
+15-10-2026 10:09:36.747 [html-report] [DEBUG] Transformed SuiteResult to report structure
+15-10-2026 10:09:36.794 [html-report] [INFO] Successfully generated html-report to => C:\Users\baris\IdeaProjects\HepsiburadaAutomation-Public\reports\html-report\index.html
+15-10-2026 10:09:36.794 [html-report] [DEBUG] Done generating HTML report using theme from C:\Users\baris\AppData\Roaming\gauge\plugins\html-report\4.4.7\themes\default
+15-10-2026 10:09:36.794 [Gauge] [DEBUG] Sending kill message to Html Report plugin.
+15-10-2026 10:09:36.801 [java] [DEBUG] Killing Java runner...
+15-10-2026 10:09:36.803 [java] [DEBUG] Stopping execution pool...
+15-10-2026 10:09:36.803 [java] [DEBUG] Shutting down grpc server...
+15-10-2026 10:09:36.811 [Gauge] [INFO] Specifications:	1 executed	0 passed	1 failed	0 skipped
+15-10-2026 10:09:36.811 [Gauge] [INFO] Scenarios:	1 executed	0 passed	1 failed	0 skipped
+15-10-2026 10:09:36.811 [Gauge] [INFO] 
+Total time taken: 1m6.756s
+15-10-2026 10:09:36.813 [Gauge] [INFO] Updates are available. Run `gauge update -c` for more info.
