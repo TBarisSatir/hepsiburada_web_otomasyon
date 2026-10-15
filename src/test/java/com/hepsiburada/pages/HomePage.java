@@ -1,7 +1,7 @@
 package com.hepsiburada.pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -56,47 +56,33 @@ public class HomePage extends BasePage {
     }
 
     /**
-     * Arama kutusuna kelimeyi yazar ve Enter'a basar.
-     * Kutu yazarken yeniden render edilebildiği için eleman her adımda yeniden bulunur;
-     * sabit beklemeler yerine koşul gerçekleşene kadar beklenir.
+     * Arama alanına tıklar, açılan arama popup'ındaki kutu yerleşince kelimeyi yazar ve Enter'a basar.
+     * Kutu açılırken yeniden render edilebildiği için eleman her adımda yeniden bulunur.
      */
     public void searchFor(String keyword) {
 
         WebDriverWait wait = waitFor(15);
 
-        // 1) Sayfa tamamen yüklensin, arama alanına tıklanabilsin
-        wait.until(d -> "complete".equals(js().executeScript("return document.readyState")));
-
-        // 2) Arama alanına tıkla (yeniden render edilirse tekrar dener) ve kutunun görünmesini bekle
-        waitFor(15).withMessage("Arama kutusu görünür olmadı: " + searchInput)
+        // 1) Arama alanı tıklanabilir olur olmaz tıkla (sayfanın tamamen yüklenmesi beklenmez)
+        waitFor(15)
+                .withMessage("Arama alanına tıklanamadı: " + searchArea)
+                .ignoring(StaleElementReferenceException.class)
+                .ignoring(ElementNotInteractableException.class)
                 .until(d -> {
-                    if (findDisplayedInput(searchInput) != null) {
-                        return true;
+                    WebElement area = ExpectedConditions.elementToBeClickable(searchArea).apply(d);
+                    if (area == null) {
+                        return false;
                     }
-                    try {
-                        d.findElement(searchArea).click();
-                    } catch (NoSuchElementException | StaleElementReferenceException
-                             | ElementClickInterceptedException ignored) {
-                    }
-                    return false;
+                    area.click();
+                    return true;
                 });
 
-        // Odağa girmesini dene (zorunlu değil)
+        // 2) Popup açılıp arama kutusu yerleşene kadar bekle, sonra kutuyu odağa al
+        WebElement input = waitForStableInput(searchInput, 10);
         try {
-            waitFor(3).until(d -> {
-                if (isFocused(searchInput)) {
-                    return true;
-                }
-                try {
-                    WebElement input = findDisplayedInput(searchInput);
-                    if (input != null) {
-                        input.click();
-                    }
-                } catch (StaleElementReferenceException | ElementClickInterceptedException ignored) {
-                }
-                return false;
-            });
-        } catch (TimeoutException ignored) {
+            clickWithJsFallback(input);
+        } catch (StaleElementReferenceException | ElementNotInteractableException ignored) {
+            // Kutu tam bu anda yenilendiyse yazma adımı onu yeniden bulur
         }
 
         // 3) Yaz, değeri doğrula; eksik/yanlışsa temizleyip tekrar dene

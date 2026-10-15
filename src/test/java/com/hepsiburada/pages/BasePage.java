@@ -7,6 +7,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -60,17 +61,56 @@ public abstract class BasePage {
     // Yeniden render edilen input'lara dayanıklı yardımcılar
     // ------------------------------------------------------------------
 
-    /** Görünür ve etkin ilk elemanı döndürür, yoksa null. */
+    /**
+     * Görünür, etkin ve üstü başka bir öğeyle kapanmamış ilk elemanı döndürür, yoksa null.
+     * Aynı locator'a uyan ama arkada kalan (etkileşime kapalı) kopyalar atlanır.
+     */
     protected WebElement findDisplayedInput(By locator) {
         for (WebElement element : driver().findElements(locator)) {
             try {
-                if (element.isDisplayed() && element.isEnabled()) {
+                if (element.isDisplayed() && element.isEnabled() && isOnTop(element)) {
                     return element;
                 }
             } catch (StaleElementReferenceException ignored) {
             }
         }
         return null;
+    }
+
+    /** Elemanın ortasındaki noktada en üstte duran öğe elemanın kendisi mi? */
+    private boolean isOnTop(WebElement element) {
+        Object result = js().executeScript(
+                "const el = arguments[0];"
+                        + "const r = el.getBoundingClientRect();"
+                        + "if (r.width === 0 || r.height === 0) return false;"
+                        + "const x = r.left + r.width / 2, y = r.top + r.height / 2;"
+                        + "if (x < 0 || y < 0 || x > innerWidth || y > innerHeight) return false;"
+                        + "const top = document.elementFromPoint(x, y);"
+                        + "return !!top && (top === el || el.contains(top));",
+                element
+        );
+        return Boolean.TRUE.equals(result);
+    }
+
+    /**
+     * Görünür ve etkin input'un yerleşmesini bekler: aynı eleman art arda birkaç
+     * kontrolde (~400 ms) değişmeden kalmalı, yani açılma/yeniden render bitmiş olmalı.
+     */
+    protected WebElement waitForStableInput(By locator, int seconds) {
+        WebElement[] last = {null};
+        int[] stableChecks = {0};
+
+        return new WebDriverWait(driver(), Duration.ofSeconds(seconds), Duration.ofMillis(200))
+                .withMessage("Eleman görünür olmadı veya sürekli yenilendi: " + locator)
+                .until(d -> {
+                    WebElement current = findDisplayedInput(locator);
+                    if (current == null || !current.equals(last[0])) {
+                        last[0] = current;
+                        stableChecks[0] = 0;
+                        return null;
+                    }
+                    return ++stableChecks[0] >= 2 ? current : null;
+                });
     }
 
     /** Elemanı her denemede yeniden bulur; sayfa yeniden render etse bile sendKeys çalışır. */
@@ -82,7 +122,7 @@ public abstract class BasePage {
                     element.sendKeys(keys);
                     return;
                 }
-            } catch (StaleElementReferenceException ignored) {
+            } catch (StaleElementReferenceException | ElementNotInteractableException ignored) {
             }
             pause(150, 300);
         }
