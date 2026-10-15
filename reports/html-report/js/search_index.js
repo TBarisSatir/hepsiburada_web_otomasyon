@@ -1,1 +1,0 @@
-var index = {"Tags":{},"Specs":{"Hepsiburada Automation":["specs/hepsiburada.html"]}};
