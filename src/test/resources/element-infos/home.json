@@ -1,0 +1,37 @@
+[
+  {
+    "key": "home_cookie_accept_button",
+    "value": "onetrust-accept-btn-handler",
+    "type": "id"
+  },
+  {
+    "key": "home_user_info",
+    "value": ".user-info",
+    "type": "css"
+  },
+  {
+    "key": "home_login_link",
+    "value": "login",
+    "type": "id"
+  },
+  {
+    "key": "home_search_area",
+    "value": "div[role='search'][aria-label='Site İçi Arama']",
+    "type": "css"
+  },
+  {
+    "key": "home_search_input",
+    "value": "input[data-test-id='search-bar-input']",
+    "type": "css"
+  },
+  {
+    "key": "home_cart_link",
+    "value": "a[href*='checkout.hepsiburada.com/sepetim']",
+    "type": "css"
+  },
+  {
+    "key": "home_account_link",
+    "value": "#myAccount a[data-test-id='account']",
+    "type": "css"
+  }
+]

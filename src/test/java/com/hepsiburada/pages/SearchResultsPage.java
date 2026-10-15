@@ -12,6 +12,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.hepsiburada.helper.ElementHelper;
+
 public class SearchResultsPage extends BasePage {
 
     /*
@@ -29,8 +31,9 @@ public class SearchResultsPage extends BasePage {
     private static final int POSITION_TOLERANCE_PX = 3;
     private static final Pattern PRODUCT_ID = Pattern.compile("i\\d+");
 
-    private final By productCardCandidates = By.cssSelector("li[id^='i']");
-    private final By productLink = By.cssSelector("a[title]");
+    // Locator'lar: resources/element-infos/search.json
+    private final By productCardCandidates = ElementHelper.getBy("search_product_card_candidates");
+    private final By productLink = ElementHelper.getBy("search_product_link");
 
     /** Ürün kartlarını (id'si i<sayı> olan li öğeleri) DOM sırasıyla döndürür. */
     private List<WebElement> findProductCards() {
@@ -156,7 +159,9 @@ public class SearchResultsPage extends BasePage {
         String originalWindow = driver().getWindowHandle();
 
         WebElement productCard = wait.until(
-                ExpectedConditions.visibilityOfElementLocated(By.id("i" + targetIndex()))
+                ExpectedConditions.visibilityOfElementLocated(
+                        ElementHelper.getBy("search_product_card_by_index", targetIndex())
+                )
         );
 
         // Düzen değişmişse yanlış ürüne tıklamak yerine net bir hatayla dur

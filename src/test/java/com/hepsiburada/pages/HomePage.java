@@ -11,22 +11,21 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.hepsiburada.helper.ElementHelper;
+
 public class HomePage extends BasePage {
 
     private static final String HOME_URL = "https://www.hepsiburada.com/";
 
-    private final By cookieAcceptButton = By.id("onetrust-accept-btn-handler");
-    private final By userInfo = By.cssSelector(".user-info");
-    private final By loginLink = By.id("login");
-    private final By searchArea =
-            By.cssSelector("div[role='search'][aria-label='Site İçi Arama']");
-    private final By searchInput =
-            By.cssSelector("input[data-test-id='search-bar-input']");
-    private final By cartLink =
-            By.cssSelector("a[href*='checkout.hepsiburada.com/sepetim']");
+    // Locator'lar: resources/element-infos/home.json
+    private final By cookieAcceptButton = ElementHelper.getBy("home_cookie_accept_button");
+    private final By userInfo = ElementHelper.getBy("home_user_info");
+    private final By loginLink = ElementHelper.getBy("home_login_link");
+    private final By searchArea = ElementHelper.getBy("home_search_area");
+    private final By searchInput = ElementHelper.getBy("home_search_input");
+    private final By cartLink = ElementHelper.getBy("home_cart_link");
     // Class adları değişken (sf-OldMyAccount-...), bu yüzden id + data-test-id kullanılır
-    private final By accountLink =
-            By.cssSelector("#myAccount a[data-test-id='account']");
+    private final By accountLink = ElementHelper.getBy("home_account_link");
 
     public void open() {
         driver().get(HOME_URL);
@@ -81,7 +80,7 @@ public class HomePage extends BasePage {
 
         WebDriverWait inputWait = waitFor(15);
         inputWait.withMessage(
-                "Arama kutusu görünür olmadı: input[data-test-id='search-bar-input']"
+                "Arama kutusu görünür olmadı: " + searchInput
         );
         inputWait.until(d -> findDisplayedInput(searchInput) != null);
 
