@@ -23,31 +23,10 @@ public class SearchResultsPage extends BasePage {
      */
     private static final int PRODUCTS_PER_ROW = 4;
     private static final int TARGET_ROW = 2;
-    private static final int POSITION_TOLERANCE_PX = 3;
     private static final Pattern PRODUCT_ID = Pattern.compile("i\\d+");
 
     private final By productCardCandidates = By.cssSelector("li[id^='i']");
     private final By productLink = By.cssSelector("a[title]");
-
-    /** Ürün kartlarını (id'si i<sayı> olan li öğeleri) DOM sırasıyla döndürür. */
-    private List<WebElement> findProductCards() {
-        List<WebElement> cards = new ArrayList<>();
-        for (WebElement li : driver().findElements(productCardCandidates)) {
-            try {
-                String id = li.getAttribute("id");
-                if (id != null && PRODUCT_ID.matcher(id).matches()) {
-                    cards.add(li);
-                }
-            } catch (StaleElementReferenceException ignored) {
-            }
-        }
-        return cards;
-    }
-
-    /** İkinci satırın ilk ürününün indeksi: (2 - 1) * 4 = 4 */
-    private int targetIndex() {
-        return (TARGET_ROW - 1) * PRODUCTS_PER_ROW;
-    }
 
     /**
      * İkinci satırdaki ilk ürüne tıklar; ürün yeni sekmede açılır ve o sekmeye geçilir.
