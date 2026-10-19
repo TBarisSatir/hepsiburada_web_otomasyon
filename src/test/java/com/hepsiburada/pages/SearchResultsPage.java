@@ -21,8 +21,6 @@ public class SearchResultsPage extends BasePage {
      * Y koordinatı ilk değişen kart, ikinci satırın ilk ürünü olarak seçilir.
      * Ürün bağlantısı yeni sekmede açılır.
      */
-    private static final int PRODUCTS_PER_ROW = 4;
-    private static final int TARGET_ROW = 2;
     private static final Pattern PRODUCT_ID = Pattern.compile("i\\d+");
 
     private final By productCardCandidates = By.cssSelector("li[id^='i']");
